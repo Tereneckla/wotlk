@@ -151,7 +151,7 @@ export const SpellCritBuff = InputHelpers.makeMultiIconInput([
 export const SpellHasteBuff = withLabel(makeBooleanRaidBuffInput(ActionId.fromSpellId(3738), 'wrathOfAirTotem'), 'Spell Haste');
 
 export const SpellPowerBuff = InputHelpers.makeMultiIconInput([
-	makeMultistateRaidBuffInput(ActionId.fromSpellId(47240), 3000, 'demonicPact', 100),
+	makeMultistateRaidBuffInput(ActionId.fromSpellId(47240), 3000, 'demonicPact', 10),
 	makeBooleanRaidBuffInput(ActionId.fromSpellId(57721), 'totemOfWrath'),
 	makeBooleanRaidBuffInput(ActionId.fromSpellId(25557), 'flametongueTotem'),
 ], 'Spell Power');

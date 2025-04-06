@@ -582,21 +582,21 @@ func (warlock *Warlock) setupDemonicPact() {
 
 			lastBonus := 0.0
 			newSPBonus := 0.0
+			pureDeath := 0.0
+			if warlock.Consumes.Flask == proto.Flask_FlaskOfPureDeath {
+				pureDeath += 80
+				if warlock.HasProfession(proto.Profession_Alchemy) {
+					pureDeath += 24
+				}
+			}
+
 			if warlock.DemonicPactAura.IsActive() {
 				lastBonus = warlock.DemonicPactAura.ExclusiveEffects[0].Priority
+				newSPBonus = math.Floor(lastBonus*dpMult*dpMult+
+					(1-dpMult)*dpMult*(warlock.GetStat(stats.SpellPower)+pureDeath)) + 1
 
-				if warlock.Options.NewDPBehaviour {
-					newSPBonus = math.Round(dpMult * (warlock.GetStat(stats.SpellPower) - lastBonus))
-				} else {
-					newSPBonus = math.Floor(lastBonus*dpMult*dpMult+
-						(1-dpMult)*dpMult*warlock.GetStat(stats.SpellPower)) + 1
-				}
 			} else {
-				if warlock.Options.NewDPBehaviour {
-					newSPBonus = math.Round(dpMult * warlock.GetStat(stats.SpellPower))
-				} else {
-					newSPBonus = math.Floor(warlock.GetStat(stats.SpellPower)*(dpMult+dpMult*dpMult)) + 1
-				}
+				newSPBonus = math.Floor((warlock.GetStat(stats.SpellPower)+pureDeath)*(dpMult+dpMult*dpMult)) + 1
 			}
 
 			if warlock.DemonicPactAura.RemainingDuration(sim) < 10*time.Second || newSPBonus >= lastBonus {
