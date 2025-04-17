@@ -230,6 +230,7 @@ var EnchantOverrides = []*proto.UIEnchant{
 	// Wrist
 	{EffectId: 2649, ItemId: 22533, SpellId: 27914, Name: "Bracer - Fortitude", Quality: proto.ItemQuality_ItemQualityUncommon, Stats: stats.Stats{stats.Stamina: 12}.ToFloatArray(), Type: proto.ItemType_ItemTypeWrist},
 	{EffectId: 2650, ItemId: 22534, SpellId: 27917, Name: "Bracer - Spellpower", Quality: proto.ItemQuality_ItemQualityUncommon, Stats: stats.Stats{stats.SpellPower: 15}.ToFloatArray(), Type: proto.ItemType_ItemTypeWrist},
+	{EffectId: 2648, ItemId: 22530, SpellId: 27906, Name: "Bracer - Major Defense", Quality: proto.ItemQuality_ItemQualityUncommon, Stats: stats.Stats{stats.Defense: 12}.ToFloatArray(), Type: proto.ItemType_ItemTypeWrist},
 	{EffectId: 369, SpellId: 34001, Name: "Bracer - Major Intellect", Quality: proto.ItemQuality_ItemQualityUncommon, Stats: stats.Stats{stats.Intellect: 12}.ToFloatArray(), Type: proto.ItemType_ItemTypeWrist},
 	{EffectId: 2647, SpellId: 27899, Name: "Bracer - Brawn", Quality: proto.ItemQuality_ItemQualityUncommon, Stats: stats.Stats{stats.Strength: 12}.ToFloatArray(), Type: proto.ItemType_ItemTypeWrist},
 	{EffectId: 1593, SpellId: 34002, Name: "Bracer - Assault", Quality: proto.ItemQuality_ItemQualityUncommon, Stats: stats.Stats{stats.AttackPower: 24, stats.RangedAttackPower: 24}.ToFloatArray(), Type: proto.ItemType_ItemTypeWrist},

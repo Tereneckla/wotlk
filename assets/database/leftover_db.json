@@ -3663,6 +3663,7 @@
 {"effectId":2622,"itemId":33148,"spellId":25086,"name":"Enchant Cloak - Dodge","type":4,"stats":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":3},
 {"effectId":2647,"spellId":27899,"name":"Bracer - Brawn","type":6,"stats":[12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":2},
 {"effectId":2648,"itemId":35756,"spellId":47051,"name":"Enchant Cloak - Steelweave","type":4,"stats":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":3,"phase":6},
+{"effectId":2648,"itemId":22530,"spellId":27906,"name":"Bracer - Major Defense","type":6,"stats":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":2},
 {"effectId":2649,"itemId":22533,"spellId":27914,"name":"Bracer - Fortitude","type":6,"stats":[0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":2},
 {"effectId":2649,"itemId":22543,"spellId":27950,"name":"Enchant Boots - Fortitude","type":10,"stats":[0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":2},
 {"effectId":2650,"itemId":22534,"spellId":27917,"name":"Bracer - Spellpower","type":6,"stats":[0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":2},
