@@ -54,6 +54,7 @@ export abstract class SimUI extends Component {
 	readonly simActionsContainer: HTMLElement;
 	readonly iterationsPicker: HTMLElement;
 	readonly simTabContentsContainer: HTMLElement;
+	config.noticeTex = `Active developtment is moving to <a href="https://wowlegacysims.github.io/sims/wotlk/all/" target="_blank">https://wowlegacysims.github.io/sims/wotlk/all/</a>. This page will not be deleted for a while, but you have to move your saved sets yourself.`
 
 	constructor(parentElem: HTMLElement, sim: Sim, config: SimUIConfig) {
 		super(parentElem, 'sim-ui');
